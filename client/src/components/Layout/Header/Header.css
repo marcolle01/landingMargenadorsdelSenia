@@ -1,0 +1,49 @@
+@tailwind components;
+
+.header {
+    @apply text-white p-4 w-full;
+    background-color: #415058;
+    height: 120px;
+}
+
+.menu {
+    width: 100%;
+
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    transform: translateX(100%);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.menu-open {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+}
+@media (max-width: 619px) {
+    .menu {
+        width: 100%;
+        top: 20%;
+    }
+
+    .close-button {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+    }
+}
+
+@media (min-width: 620px) {
+    .menu {
+        width: 30%;
+        margin-top: 18%;
+    }
+
+    .close-button {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+    }
+}
