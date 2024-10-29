@@ -75,3 +75,29 @@
         transform: translateY(-50%);
     }
 }
+
+@media (max-width: 456px) {
+    .menu {
+        width: 100%;
+
+        margin-top: 39%;
+    }
+
+    .close-button {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+    }
+
+    .header nav {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+    }
+
+    .header nav .block {
+        margin-top: 0;
+    }
+}

@@ -13,16 +13,18 @@ const Header = () => {
 
     return (
         <header className='header'>
-            <nav className='container my-2 mx-auto mainnav flex flex-wrap items-center justify-between pt-3'>
-                <NavLink to={'/'}>
-                    <img
-                        src={letras}
-                        alt='Logo'
-                        className='h-10'
-                    />
-                </NavLink>
+            <nav className='container my-2 mx-auto mainnav flex flex-wrap items-center justify-between pt-3 p-20'>
+                <div className='flex-grow flex justify-center'>
+                    <NavLink to={'/'}>
+                        <img
+                            src={letras}
+                            alt='Logo'
+                            className='h-10'
+                        />
+                    </NavLink>
+                </div>
 
-                <div className='block'>
+                <div className='block flex-grow-0 justify-end '>
                     <button
                         onClick={toggleMenu}
                         className='text-black'
