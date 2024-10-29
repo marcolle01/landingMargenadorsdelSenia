@@ -37,7 +37,35 @@
 @media (min-width: 620px) {
     .menu {
         width: 30%;
-        margin-top: 18%;
+        margin-top: 15%;
+    }
+
+    .close-button {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+    }
+}
+
+@media (min-width: 795px) {
+    .menu {
+        width: 30%;
+        margin-top: 12%;
+    }
+
+    .close-button {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+    }
+}
+
+@media (min-width: 1001px) {
+    .menu {
+        width: 30%;
+        margin-top: 7%;
     }
 
     .close-button {
