@@ -5,7 +5,7 @@ const Layout = ({ children }) => {
     return (
         <>
             <Header />
-            {children}
+            <main className='flex-grow mt-32'>{children}</main>
             <Footer />
         </>
     );

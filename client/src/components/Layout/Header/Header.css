@@ -4,6 +4,11 @@
     @apply text-white p-4 w-full;
     background-color: #415058;
     height: 120px;
+    position: fixed; /* Hace que el header esté fijo */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Asegúrate de que el header esté por encima de otros elementos */
 }
 
 .menu {
@@ -13,6 +18,7 @@
     transform: translateX(100%);
     opacity: 0;
     visibility: hidden;
+    z-index: 1000; /* Asegúrate de que el menú tenga un z-index alto */
 }
 
 .menu-open {
@@ -20,7 +26,7 @@
     opacity: 1;
     visibility: visible;
 }
-@media (max-width: 619px) {
+@media (max-width: 609px) {
     .menu {
         width: 100%;
         top: 20%;
@@ -51,7 +57,7 @@
 @media (min-width: 795px) {
     .menu {
         width: 30%;
-        margin-top: 12%;
+        margin-top: 10%;
     }
 
     .close-button {
@@ -73,6 +79,31 @@
         top: 50%;
         right: 0;
         transform: translateY(-50%);
+    }
+}
+
+@media (max-width: 546px) {
+    .menu {
+        width: 100%;
+        margin-top: -10%;
+    }
+
+    .close-button {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+    }
+
+    .header nav {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+    }
+
+    .header nav .block {
+        margin-top: 0;
     }
 }
 
@@ -101,3 +132,42 @@
         margin-top: 0;
     }
 }
+
+@media (min-width: 71px) and (max-width: 484px) {
+    .menu {
+        width: 100%;
+        margin-top: -12%;
+    }
+    .close-button {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+    }
+}
+/*
+@media (min-width: 543px) and (max-width: 608px) {
+    .menu {
+        width: 100%;
+        margin-top: -2%;
+    }
+    .close-button {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+    }
+}
+
+@media (min-width: 300px) and (max-width: 363px) {
+    .menu {
+        width: 100%;
+        margin-top: -19%;
+    }
+    .close-button {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+    }
+} */

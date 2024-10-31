@@ -1,0 +1,45 @@
+@tailwind components;
+
+.carusel {
+    width: 100%;
+    margin: 0; /* Asegúrate de que no haya márgenes adicionales */
+    padding: 0; /* Asegúrate de que no haya padding adicional */
+}
+
+.homecarusel {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #415058;
+    border-radius: 15%;
+}
+
+.image-container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #415058;
+}
+
+.image-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    background-color: #415058;
+}
+
+@media (min-width: 1024px) {
+    .homecarusel {
+        padding-bottom: 2%;
+        padding-right: 8%;
+        padding-left: 8%;
+    }
+
+    .image-container {
+        height: 700px; /* Ajusta la altura según sea necesario */
+    }
+}

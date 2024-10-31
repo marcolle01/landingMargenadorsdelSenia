@@ -4,4 +4,5 @@
 
 .footer {
     @apply bg-gray-800 text-white p-4 w-full;
+    margin: 0;
 }
